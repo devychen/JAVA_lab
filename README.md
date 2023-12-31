@@ -18,7 +18,7 @@
 - An **algorithm** describes a means of performing an action.
 - Errors: syntax/Runtime/Logic
 #### Variables
-Declare var: `type varName`, example 'int eggs;' (Must declare before use)<br>
+Declare var: `type varName`, example `int eggs;` (Must declare before use)<br>
 Assign value: `eggs = 6;`, `eggs = eggs - 3;`<br>
 #### Data type
 (used for a class of objects and has both data and methods)<br>
