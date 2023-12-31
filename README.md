@@ -2,7 +2,7 @@
 
 ### Printing to screen
 `System.out.println("...");`   
-`System.out` object, sent output
+`System.out` object, sent output  
 `println` method, print in parentheses
 
 ### Call/invoke object’s methods
