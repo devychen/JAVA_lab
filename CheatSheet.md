@@ -1,4 +1,6 @@
-**Concepts**: OOP, object, method, variable, constant, package (a liberal of classes) <br>
+**Concepts**: 
+OOP, object, method, variable, class, data types, constant, package (a liberal of classes) <br>
+Flow of control, branching statement, loop statement <br>
 
 **Data types**: Primitive & Class: `byte` -> `short` -> `int` -> `long` -> `float` -> `double` <br>
 
