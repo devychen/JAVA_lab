@@ -1,7 +1,7 @@
 # JAVA Key Summary
 
 ### Printing to screen
-`System.out.println("...");`
+`System.out.println("...");`   
 `System.out` object, sent output
 `println` method, print in parentheses
 
