@@ -5,7 +5,7 @@
 **Keyboard Input** <br>
 `import java.util.Scanner;` // class Scanner is part of java.util pkg, import source file <br> 
 `Scanner keyboard = new Scanner(System.in);` // create an object of the Scanner class <br>
-`int n1 = keyboard.nextIn();`// read data (an int e.g) <br>
+`int n1 = keyboard.nextIn();` // read data (an int e.g) <br>
 **Keyboard Output**
 `System.out.println("The count is" + count);` // `System.out` is an object
 `println` next item start on a new line, `print` continue on same line.
