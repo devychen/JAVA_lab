@@ -20,9 +20,14 @@
 #### Variables
 Declare var: `type varName`, example `int eggs;` (Must declare before use)<br>
 Assign value: `eggs = 6;`, `eggs = eggs - 3;`<br>
+Identifiers: name, e.g. varName. Could be letters, digits, (_), but NOT start with digit, avoid $ <br>
 #### Data type
 (used for a class of objects and has both data and methods)<br>
-Primitive: Interger: `byte`, `short`, `int`, `long`, `float`, `double`, `char`, 'boolean' <br>
+Primitive: 
+- Interger: `byte`, `short`, `int`, `long`
+- Floating-point: `float`, `double`
+- Single character: `char`
+- Boolean: `boolean`
 
 #### Class `String`<br>
 
