@@ -31,10 +31,24 @@ Assignment Statement: `eggs = 6;`, `eggs = eggs - 3;`, `avg = sum/count` (expres
 - Boolean: **`boolean`**
 3. Name Convention:<br>
 1/ Class type `String`, 2/ Primitive type `int`, 3/ Varname `myName` "puncutated" using uppercase letters<br>
+4. Automatic type conversion:
+  `byte` -> `short` -> `int` -> `long` -> `float` -> `double`
+  i.e. a value of one type can be assigned to a variable of any type further to the right
+5. Type casting
+  `double distance = 9.0;`
+  `int points = (int) distance;`
+
+#### Expressions
+Constants: literal expressions. e.g. `2`, `3.7`, `y`;
+Fix value: `public static final Type Variable = Cosntant;` e.g. `public static final int MAX_ENTRIES = 100;` <br>
 
 #### Class `String`<br>
 
 #### Keyboard and Screen I/O
-`import java. util.Scanner;` //Keyboard input by [Scanner] object<br>
-`Scanner keyboard = new Scanner(System.in);` and then enter data<br>
+`import java. util.Scanner;` Keyboard input by [Scanner] object <br>
+`Scanner keyboard = new Scanner(System.in);` and then enter data <br>
+`System.out.println("The count is" + count);` sometimes with literal or multiple var <br>
+
+
+
 
