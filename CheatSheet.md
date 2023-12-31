@@ -15,7 +15,7 @@ Declaring constants: `public static final Type Name = Value` <br>
 `int n1 = keyboard.nextIn();` read data (an int e.g) <br>
 
 **Keyboard Output** <br>
-`System.out.println("The count is" + count);` `System.out` is an object
+`System.out.println("The count is" + count);` `System.out` is an object <br>
 `println` next item start on a new line, `print` continue on same line. <br>
 
 **Operators**: <br>
