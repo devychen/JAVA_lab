@@ -37,9 +37,7 @@ Assignment Statement: `eggs = 6;`, `eggs = eggs - 3;`, `avg = sum/count` (expres
 5. Type casting <br>
   `double distance = 9.0;` <br>
   `int points = (int) distance;`
-
-#### Expressions
-Constants: literal expressions. e.g. `2`, `3.7`, `y`;
+6. Constants: literal expressions. e.g. `2`, `3.7`, `y`; <br>
 Fix value: `public static final Type Variable = Cosntant;` e.g. `public static final int MAX_ENTRIES = 100;` <br>
 
 #### Class `String`<br>
