@@ -4,7 +4,7 @@
 
 **Name convention**: type varNameStartLower, ClassNameUpper <br>
 
-**Comments** `//` one line. `/* */` multiple lines <br>
+**Comments** `//` one line. `/* */` multiple lines. `/** */` javadoc. <br>
 
 **Type Casting**: int varName = (int) varName <br>
 
