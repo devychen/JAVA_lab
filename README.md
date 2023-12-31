@@ -26,10 +26,10 @@ Name Convention:<br>
 #### Data type
 1. Class type: used for a class of objects and has both data and methods)<br>
 2. Primitive: 
-- Interger: `byte`, `short`, `int`, `long`
-- Floating-point: `float`, `double`
-- Single character: `char`
-- Boolean: `boolean`
+- Interger: `byte`, `short`, **`int`**, `long`
+- Floating-point: `float`, **`double`**
+- Single character: **`char`**
+- Boolean: **`boolean`**
 
 #### Class `String`<br>
 
