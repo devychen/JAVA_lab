@@ -2,9 +2,11 @@
 
 **Data types**: Primitive & Class: `byte` -> `short` -> `int` -> `long` -> `float` -> `double` <br>
 
-**Type Casting**: int varName = (int) varName <br>
-
 **Name convention**: type varNameStartLower, ClassNameUpper <br>
+
+**Comments** `//` one line. `/* */` multiple lines
+
+**Type Casting**: int varName = (int) varName <br>
 
 **Keyboard Input** <br>
 `import java.util.Scanner;` class Scanner is part of java.util pkg, import source file <br> 
@@ -30,7 +32,7 @@ Increment operator `++`, decrement `--`: prior before var <br>
 `indexOf(Sub_String)` returns the index of the first occurence of substring. -1 if A is not found. <br>
 `lastIndexOf(Sub_String)` returns ... last occurence. <br>
 `length()` returns the length. <br>
-'toLowerCase()' returns in lowercase. <br>
+`toLowerCase()` returns in lowercase. <br>
 `toUpperCase()` ... in uppercase. <br>
 `replace(OldChar, NewChar)` returns with each occurence of OldChar replaced by NewChar. <br>
 `substring(Start)` returns substring begins at index Start to the end. <br>
@@ -40,4 +42,8 @@ Increment operator `++`, decrement `--`: prior before var <br>
 **Escape characters** <br>
 `\"` double quote, `\'` single quote, `\\` backslash <br>
 `\n` new line, `\r` carriage return, `\t`tab <br>
+
+**Scanner Methods `next`**: reads all the chars up to the next whitespace <br>
+nextX for each primitives: `nextInt`, `nextBoolean`, `nextDouble` <br>
+`nextLine()` reads remainder of current line even empty. <br>
 
