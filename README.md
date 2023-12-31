@@ -20,10 +20,12 @@
 #### Variables
 Declare var: `type varName`, example `int eggs;` (Must declare before use)<br>
 Assign value: `eggs = 6;`, `eggs = eggs - 3;`<br>
-Identifiers: name, e.g. varName. Could be letters, digits, (_), but NOT start with digit, avoid $ <br>
+Identifiers: Name, e.g. varName. Case sensitive. Could be letters, digits, (_), but NOT start with digit, avoid $/( )/(.)/(*) <br>
+Name Convention:<br>
+Class type `String`, Primitive type `int`, Varname `myName` "puncutated" using uppercase letters
 #### Data type
-(used for a class of objects and has both data and methods)<br>
-Primitive: 
+1. Class type: used for a class of objects and has both data and methods)<br>
+2. Primitive: 
 - Interger: `byte`, `short`, `int`, `long`
 - Floating-point: `float`, `double`
 - Single character: `char`
