@@ -25,10 +25,10 @@ Assignment Statement: `eggs = 6;`, `eggs = eggs - 3;`, `avg = sum/count` (expres
 #### Data type
 1. Class type: used for a class of objects and has both data and methods)<br>
 2. Primitive: 
-- Interger: `byte`, `short`, **`int`**, `long`
-- Floating-point: `float`, **`double`**
-- Single character: **`char`**
-- Boolean: **`boolean`**
+  - Interger: `byte`, `short`, **`int`**, `long`
+  - Floating-point: `float`, **`double`**
+  - Single character: **`char`**
+  - Boolean: **`boolean`**
 3. Name Convention:<br>
 1/ Class type `String`, 2/ Primitive type `int`, 3/ Varname `myName` "puncutated" using uppercase letters<br>
 4. Automatic type conversion:
