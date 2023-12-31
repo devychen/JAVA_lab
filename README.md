@@ -32,10 +32,10 @@ Assignment Statement: `eggs = 6;`, `eggs = eggs - 3;`, `avg = sum/count` (expres
 3. Name Convention:<br>
 1/ Class type `String`, 2/ Primitive type `int`, 3/ Varname `myName` "puncutated" using uppercase letters<br>
 4. Automatic type conversion:
-  `byte` -> `short` -> `int` -> `long` -> `float` -> `double`
+  `byte` -> `short` -> `int` -> `long` -> `float` -> `double` <br>
   i.e. a value of one type can be assigned to a variable of any type further to the right
-5. Type casting
-  `double distance = 9.0;`
+5. Type casting <br>
+  `double distance = 9.0;` <br>
   `int points = (int) distance;`
 
 #### Expressions
