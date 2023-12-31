@@ -6,7 +6,7 @@
 
 `System.out` object, sent output
 
-`println` method, print in parentheses
+'println' method, print in parentheses
 
 - **Call/invoke object’s methods**
 
