@@ -2,7 +2,8 @@
 
 **Data types**: Primitive & Class: `byte` -> `short` -> `int` -> `long` -> `float` -> `double` <br>
 
-**Name convention**: type varNameStartLower, ClassNameUpper <br>
+**Name convention**: type varNameStartLower, ClassNameUpper, UPPERCONSTANT <br>
+Declaring constants: `public static final Type Name = Value` <br>
 
 **Comments** `//` one line. `/* */` multiple lines. `/** */` javadoc. <br>
 
@@ -46,4 +47,3 @@ Increment operator `++`, decrement `--`: prior before var <br>
 **Scanner Methods `next`**: reads all the chars up to the next whitespace <br>
 nextX for each primitives: `nextInt`, `nextBoolean`, `nextDouble` <br>
 `nextLine()` reads remainder of current line even empty. <br>
-
