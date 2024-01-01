@@ -1,8 +1,8 @@
 **Concepts**: 
 OOP, object, method, variable, class, data types, constant, package (a liberal of classes) <br>
-Flow of control, branching statement, loop statement <br>
+Flow of control (the order program performs actions), branching statement(choose between 2 actions), loop statement(repeat action until stopping condition) <br>
 
-**Data types**: Primitive & Class: `byte` -> `short` -> `int` -> `long` -> `float` -> `double` <br>
+**Data types**: Primitive & Class. `byte` -> `short` -> `int` -> `long` -> `float` -> `double` <br>
 
 **Name convention**: type varNameStartLower, ClassNameUpper, UPPERCONSTANT <br>
 Declaring constants: `public static final Type Name = Value` <br>
@@ -50,3 +50,7 @@ Increment operator `++`, decrement `--`: prior before var <br>
 **Scanner Methods `next`**: reads all the chars up to the next whitespace <br>
 nextX for each primitives: `nextInt`, `nextBoolean`, `nextDouble` <br>
 `nextLine()` reads remainder of current line even empty. <br>
+
+**Statement `if else`**
+**Type Boolean**
+**Statement `switch`**
