@@ -1,6 +1,6 @@
 **Concepts**: 
-OOP, object, method, variable, class, data types, constant, package (a liberal of classes) <br>
-Flow of control (the order program performs actions), branching statement(choose between 2 actions), loop statement(repeat action until stopping condition) <br>
+1. OOP, object, method, variable, class, data types, constant, package (a liberal of classes) <br>
+2. Flow of control (the order program performs actions), branching statement(choose between ≥2 actions), loop statement(repeat action until stopping condition) <br>
 
 **Data types**: Primitive & Class. `byte` -> `short` -> `int` -> `long` -> `float` -> `double` <br>
 
@@ -21,15 +21,30 @@ Declaring constants: `public static final Type Name = Value` <br>
 `System.out` is an object <br>
 `println` next item start on a new line, `print` continue on same line. <br>
 
-**Operators**: <br>
-Arithmetic expressions (+, -, !, ++, --; *, /, % mod), operands - 操作符 <br>
+**Operators 运算符**: expression 表达式 <br>
+1. Arithmetic expressions (+, -, !, ++, --; *, /, % mod), operands - 操作符 <br>
 `amount = amount + 5;` equals `amount += 5;`, also have `-+`, `*=` <br>
 Increment operator `++`, decrement `--`: prior before var <br>
 `int m =4;`, `int result = 3 * (++m);`, m = 5, result = 15. If `(m++)`, m = 5, result = 2; <br>
+2. Boolean expressions
+3. Comparison Operators: `==`, `!=` ≠, `>`, `>=`, `<`, `<=`. <br>
+Don't use `==` for floating `double` or boolean or object (for string it compares location not content, use `equals` instead), only `int` and `char`. <br>
+4. Logical Operators: `&&` and, `||` or, `!` not.
+5. Compound Boolean Expression: combine B_E using logical operators. <br>
+`if ((score > 0) && (score <= 100))` NOT `if (0 < score <= 100)` Parentheses for better readability <br>
+`if ((quantity > 5) || (cost < 10))` <br> inclusive 'or', namely allows either or both true <br>
+6. Negating B_E. Avoid Negation operator.
+`(a || b) && !(a && b)` exclusive or, namely true only if one if true <br>
+
 
 **String methods**: <br>
 `charAt(index)` returns the char at Index. Position (i.e.index) starts with 0 not 1, space incl. <br>
-`compareTo(A_String)` returns negative integer if lexicographically first, zero if equal, positive if A_String first. <br>
+`compareTo(A_String)` returns negative int if lexicographically* first, zero if equal, positive if A_String first. <br>
+```
+if (s1.compareTo(s2) < 0) // s1 < s2
+if (s1.compareTo(s2) == 0) // equal
+if (s1.compareTo(s2) > 0) // s1 > s2, namely comes lexicographically after s2
+```
 `concat(A_String)`returns a new string concatenated. <br>
 `equals(Other_String)` returns if strings are equal, false otherwise. <br>
 `equalsIgnoreCase(Other_String)` similar. <br>
@@ -52,5 +67,46 @@ nextX for each primitives: `nextInt`, `nextBoolean`, `nextDouble` <br>
 `nextLine()` reads remainder of current line even empty. <br>
 
 **Statement `if else`**
+1. Syntax
+```
+if (Boolena_Expression) {
+// do this if B_E is true;
+} else {
+// do this if false;
+}
+```
+!else part could be omiited sometimes
+2. Nested `if else`
+```
+if (Boolean_Expression_1) {
+  if (Boolean_Expression_2) {
+    Statement(s)
+  } else {
+    Statement(s)
+  }
+} else {
+  if (Boolean_Expression_3) {
+    Statement(s)
+  } else {  // each `else` paried with nearest `if`
+    Statement(s);
+  }
+}
+```
+3. Multi branch `if else`
+```
+if (B_E_1) {
+  Statement(s)
+} else if (B_E_2) {
+  Statement(s)
+} else if (B_E_3) {
+  Statement(s)
+} else if ...
+} else (
+  Default_Statement(s)
+)
+```
 **Type Boolean**
+The value of B_E is either true/false 
 **Statement `switch`**
+
+* lexicographic order: alphabetical order based on Unicode char set.
