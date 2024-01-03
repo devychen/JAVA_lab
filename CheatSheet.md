@@ -2,7 +2,8 @@
 1. OOP, object, method, variable, class, data types, constant, package (a liberal of classes) <br>
 2. Flow of control (the order program performs actions), branching statement(choose between ≥2 actions), loop statement(repeat action until stopping condition) <br>
 
-**Data types**: Primitive & Class. `byte` -> `short` -> `int` -> `long` -> `float` -> `double` <br>
+**Data types**: Primitive & Class. <br>
+Compatibility: `byte` -> `short` -> `int` -> `long` -> `float` -> `double` <br>
 
 **Name convention**: type varNameStartLower, ClassNameUpper, UPPERCONSTANT <br>
 Declaring constants: `public static final Type Name = Value` <br>
@@ -15,6 +16,7 @@ Declaring constants: `public static final Type Name = Value` <br>
 `import java.util.Scanner;` class Scanner is part of java.util pkg, import source file <br> 
 `Scanner keyboard = new Scanner(System.in);` create an object of the Scanner class <br>
 `int n1 = keyboard.nextIn();` read data (an int e.g) <br>
+`keyboard.close()` Remember to close Scanner <br>
 
 **Keyboard Output** <br>
 `System.out.println("The count is" + count);` <br>
@@ -35,6 +37,17 @@ Don't use `==` for floating `double` or boolean or object (for string it compare
 `if ((quantity > 5) || (cost < 10))` <br> inclusive 'or', namely allows either or both true <br>
 6. Negating B_E. Avoid Negation operator.
 `(a || b) && !(a && b)` exclusive or, namely true only if one if true <br>
+7. Conditional operator `?` `:`
+```
+if (n1 > n2)
+  max = n1;
+else
+  max = n2 // legal without {} but recommended.
+// could be written as:
+max = (n1 > n2) ? n1 : n2;
+// another example
+System.out.println("You worked " + hours + ((hours > 1) ? "hours" : "hour"));
+```
 
 
 **String methods**: <br>
@@ -75,7 +88,7 @@ if (Boolena_Expression) {
 // do this if false;
 }
 ```
-!else part could be omiited sometimes
+!else part could be omiited sometimes <br>
 2. Nested `if else`
 ```
 if (Boolean_Expression_1) {
@@ -106,7 +119,28 @@ if (B_E_1) {
 )
 ```
 **Type Boolean**
-The value of B_E is either true/false 
+The value of B_E is either true/false <br>
+```
+boolean isPositive = (number > 0);
+...
+if (isPositive) ...
+```
+
 **Statement `switch`**
+
+
+**Method `exit`**
+`System.exit(0)` Terminate program.
+```
+if (numberOfWinners == 0) {
+  System.out.println ("Error: Dividing by zero.");
+  System.exit (0);
+  } else {
+  oneShare = payoff / numberOfWinners;
+  System.out.println("Each winner will receive $"
+                    + oneShare);
+}
+```
+
 
 * lexicographic order: alphabetical order based on Unicode char set.
