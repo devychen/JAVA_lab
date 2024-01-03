@@ -1,52 +1,148 @@
-# JAVA Key Summary
+# JAVA Cheat Sheet
 
-#### Printing to screen
-`System.out.println("...");`   
-`System.out` object, sent output  
-`println` method, print in parentheses
+**Concepts**: 
+1. OOP, object, method, variable, class, data types, constant, package (a liberal of classes) <br>
+2. Flow of control (the order program performs actions), branching statement(choose between ≥2 actions), loop statement(repeat action until stopping condition) <br>
 
-#### Call/invoke object’s methods
-`objectName.methodName(argumentsTheMethodsNeeds;`
+**Data types**: Primitive & Class. <br>
+Compatibility: `byte` -> `short` -> `int` -> `long` -> `float` -> `double` <br>
 
-#### Name of file aligns name of class with “.java”
-#### Class to run
-`public static void main(String[] args)`
+**Name convention**: type varNameStartLower, ClassNameUpper, UPPERCONSTANT <br>
+Declaring constants: `public static final Type Name = Value` <br>
 
-#### OOP Terminology
-- Java is an OOP (Object-Oriented Programming) language.
-- **Objects** perform actions (**methods**). Same kind of objects have same set of methods + same kinds of data, but each object can have its own data values stored by **variables**. 
-- An **algorithm** describes a means of performing an action.
-- Errors: syntax/Runtime/Logic<br>
-#### Variables
-Declare var: `type varName`, example `int eggs;` (Must declare before use)<br>
-Identifiers: Name, e.g. varName. Case sensitive. Could be letters, digits, (_), but NOT start with digit, avoid $/( )/(.)/(*) <br>
-Assignment Statement: `eggs = 6;`, `eggs = eggs - 3;`, `avg = sum/count` (expression on the right-hand side of the assignment operator (=) is evaluated first)<br>
+**Comments** `//` one line. `/* */` multiple lines. `/** */` javadoc. <br>
 
-#### Data type
-1. Class type: used for a class of objects and has both data and methods)<br>
-2. Primitive: 
-  - Interger: `byte`, `short`, **`int`**, `long`
-  - Floating-point: `float`, **`double`**
-  - Single character: **`char`**
-  - Boolean: **`boolean`**
-3. Name Convention:<br>
-1/ Class type `String`, 2/ Primitive type `int`, 3/ Varname `myName` "puncutated" using uppercase letters<br>
-4. Automatic type conversion:
-  `byte` -> `short` -> `int` -> `long` -> `float` -> `double` <br>
-  i.e. a value of one type can be assigned to a variable of any type further to the right
-5. Type casting <br>
-  `double distance = 9.0;` <br>
-  `int points = (int) distance;`
-6. Constants: literal expressions. e.g. `2`, `3.7`, `y`; <br>
-Fix value: `public static final Type Variable = Cosntant;` e.g. `public static final int MAX_ENTRIES = 100;` <br>
+**Type Casting**: int varName = (int) varName <br>
 
-#### Class `String`<br>
+**Keyboard Input** <br>
+`import java.util.Scanner;` class Scanner is part of java.util pkg, import source file <br> 
+`Scanner keyboard = new Scanner(System.in);` create an object of the Scanner class <br>
+`int n1 = keyboard.nextIn();` read data (an int e.g) <br>
+`keyboard.close()` Remember to close Scanner <br>
 
-#### Keyboard and Screen I/O
-`import java. util.Scanner;` Keyboard input by [Scanner] object <br>
-`Scanner keyboard = new Scanner(System.in);` and then enter data <br>
-`System.out.println("The count is" + count);` sometimes with literal or multiple var <br>
+**Keyboard Output** <br>
+`System.out.println("The count is" + count);` <br>
+`System.out` is an object <br>
+`println` next item start on a new line, `print` continue on same line. <br>
+
+**Operators 运算符**: expression 表达式 <br>
+1. Arithmetic expressions (+, -, !, ++, --; *, /, % mod), operands - 操作符 <br>
+`amount = amount + 5;` equals `amount += 5;`, also have `-+`, `*=` <br>
+Increment operator `++`, decrement `--`: prior before var <br>
+`int m =4;`, `int result = 3 * (++m);`, m = 5, result = 15. If `(m++)`, m = 5, result = 2; <br>
+2. Boolean expressions
+3. Comparison Operators: `==`, `!=` ≠, `>`, `>=`, `<`, `<=`. <br>
+Don't use `==` for floating `double` or boolean or object (for string it compares location not content, use `equals` instead), only `int` and `char`. <br>
+4. Logical Operators: `&&` and, `||` or, `!` not.
+5. Compound Boolean Expression: combine B_E using logical operators. <br>
+`if ((score > 0) && (score <= 100))` NOT `if (0 < score <= 100)` Parentheses for better readability <br>
+`if ((quantity > 5) || (cost < 10))` <br> inclusive 'or', namely allows either or both true <br>
+6. Negating B_E. Avoid Negation operator.
+`(a || b) && !(a && b)` exclusive or, namely true only if one if true <br>
+7. Conditional operator `?` `:`
+```
+if (n1 > n2)
+  max = n1;
+else
+  max = n2 // legal without {} but recommended.
+// could be written as:
+max = (n1 > n2) ? n1 : n2;
+// another example
+System.out.println("You worked " + hours + ((hours > 1) ? "hours" : "hour"));
+```
 
 
+**String methods**: <br>
+`charAt(index)` returns the char at Index. Position (i.e.index) starts with 0 not 1, space incl. <br>
+`compareTo(A_String)` returns negative int if lexicographically* first, zero if equal, positive if A_String first. <br>
+```
+if (s1.compareTo(s2) < 0) // s1 < s2
+if (s1.compareTo(s2) == 0) // equal
+if (s1.compareTo(s2) > 0) // s1 > s2, namely comes lexicographically after s2
+```
+`concat(A_String)`returns a new string concatenated. <br>
+`equals(Other_String)` returns if strings are equal, false otherwise. <br>
+`equalsIgnoreCase(Other_String)` similar. <br>
+`indexOf(Sub_String)` returns the index of the first occurence of substring. -1 if A is not found. <br>
+`lastIndexOf(Sub_String)` returns ... last occurence. <br>
+`length()` returns the length. <br>
+`toLowerCase()` returns in lowercase. <br>
+`toUpperCase()` ... in uppercase. <br>
+`replace(OldChar, NewChar)` returns with each occurence of OldChar replaced by NewChar. <br>
+`substring(Start)` returns substring begins at index Start to the end. <br>
+`substring(Start, End)` returns from index Start to End. <br>
+`trim()` returns with leading and trailing whitespace removed. <br>
+
+**Escape characters** <br>
+`\"` double quote, `\'` single quote, `\\` backslash <br>
+`\n` new line, `\r` carriage return, `\t`tab <br>
+
+**Scanner Methods `next`**: reads all the chars up to the next whitespace <br>
+nextX for each primitives: `nextInt`, `nextBoolean`, `nextDouble` <br>
+`nextLine()` reads remainder of current line even empty. <br>
+
+**Statement `if else`**
+1. Syntax
+```
+if (Boolena_Expression) {
+// do this if B_E is true;
+} else {
+// do this if false;
+}
+```
+!else part could be omiited sometimes <br>
+2. Nested `if else`
+```
+if (Boolean_Expression_1) {
+  if (Boolean_Expression_2) {
+    Statement(s)
+  } else {
+    Statement(s)
+  }
+} else {
+  if (Boolean_Expression_3) {
+    Statement(s)
+  } else {  // each `else` paried with nearest `if`
+    Statement(s);
+  }
+}
+```
+3. Multi branch `if else`
+```
+if (B_E_1) {
+  Statement(s)
+} else if (B_E_2) {
+  Statement(s)
+} else if (B_E_3) {
+  Statement(s)
+} else if ...
+} else (
+  Default_Statement(s)
+)
+```
+**Type Boolean**
+The value of B_E is either true/false <br>
+```
+boolean isPositive = (number > 0);
+...
+if (isPositive) ...
+```
+
+**Statement `switch`**
 
 
+**Method `exit`**
+`System.exit(0)` Terminate program.
+```
+if (numberOfWinners == 0) {
+  System.out.println ("Error: Dividing by zero.");
+  System.exit (0);
+  } else {
+  oneShare = payoff / numberOfWinners;
+  System.out.println("Each winner will receive $"
+                    + oneShare);
+}
+```
+
+
+* lexicographic order: alphabetical order based on Unicode char set.
