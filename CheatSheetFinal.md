@@ -1,3 +1,8 @@
+**Name Convention**
+`Class` begin upperc <br>
+`primitive` begin lowerc <>
+`variableOfBothTypes` begin lowercase, puntuated by upperc <br>
+
 **Primitive Data Compatibility**: byte -> short -> int -> long -> float -> double
 
 **Increment operator** `++`, **decrement** `--`: prior before var <br>
