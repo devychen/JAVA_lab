@@ -1,5 +1,8 @@
 **Primitive Data Compatibility**: byte -> short -> int -> long -> float -> double
 
+**Increment operator** `++`, **decrement** `--`: prior before var <br>
+`int m =4;`, `int result = 3 * (++m);`, then m = 5, result = 15. If `(m++)`, then m = 5, result = 2; <br>
+
 **String methods**: <br>
 `charAt(index)` returns the char at Index. Position (i.e.index) starts with 0 not 1, space incl. <br>
 `compareTo(A_String)` returns negative int if lexicographically* first, zero if equal, positive if A_String first. <br>
