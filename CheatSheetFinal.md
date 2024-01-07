@@ -3,6 +3,7 @@
 **Increment operator** `++`, **decrement** `--`: prior before var <br>
 `int m =4;`, `int result = 3 * (++m);`, then m = 5, result = 15. If `(m++)`, then m = 5, result = 2; <br>
 
+
 **String methods**: <br>
 `charAt(index)` returns the char at Index. Position (i.e.index) starts with 0 not 1, space incl. <br>
 `compareTo(A_String)` returns negative int if lexicographically* first, zero if equal, positive if A_String first. <br>
@@ -23,3 +24,10 @@ if (s1.compareTo(s2) > 0) // s1 > s2, namely comes lexicographically after s2
 `substring(Start)` returns substring begins at index Start to the end. <br>
 `substring(Start, End)` returns from index Start to End. <br>
 `trim()` returns with leading and trailing whitespace removed. <br>
+
+
+**Statements**
+
+**语句**
+`public static final type Variable = number;` <br>
+e.g. `public static final int MAX_ENTRIES = 100;` 
