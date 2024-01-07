@@ -25,6 +25,10 @@ Declaring constants: `public static final Type Name = Value` <br>
 `System.out` is an object <br>
 `println` next item start on a new line, `print` continue on same line. <br>
 
+**Escape characters** <br>
+`\"` double quote, `\'` single quote, `\\` backslash <br>
+`\n` new line, `\r` carriage return, `\t`tab <br>
+
 **Operators 运算符**: expression 表达式 <br>
 1. Arithmetic expressions (+, -, !, ++, --; *, /, % mod), operands - 操作符 <br>
 `amount = amount + 5;` equals `amount += 5;`, also have `-+`, `*=` <br>
@@ -51,6 +55,13 @@ max = (n1 > n2) ? n1 : n2;
 System.out.println("You worked " + hours + ((hours > 1) ? "hours" : "hour"));
 ```
 
+**Type Boolean**
+The value of B_E is either true/false <br>
+```
+boolean isPositive = (number > 0);
+...
+if (isPositive) ...
+```
 
 **String methods**: <br>
 `charAt(index)` returns the char at Index. Position (i.e.index) starts with 0 not 1, space incl. <br>
@@ -72,10 +83,6 @@ if (s1.compareTo(s2) > 0) // s1 > s2, namely comes lexicographically after s2
 `substring(Start)` returns substring begins at index Start to the end. <br>
 `substring(Start, End)` returns from index Start to End. <br>
 `trim()` returns with leading and trailing whitespace removed. <br>
-
-**Escape characters** <br>
-`\"` double quote, `\'` single quote, `\\` backslash <br>
-`\n` new line, `\r` carriage return, `\t`tab <br>
 
 **Scanner Methods `next`**: reads all the chars up to the next whitespace <br>
 nextX for each primitives: `nextInt`, `nextBoolean`, `nextDouble` <br>
@@ -119,13 +126,6 @@ if (B_E_1) {
 } else (
   Default_Statement(s)
 )
-```
-**Type Boolean**
-The value of B_E is either true/false <br>
-```
-boolean isPositive = (number > 0);
-...
-if (isPositive) ...
 ```
 
 **Statement `switch`**
