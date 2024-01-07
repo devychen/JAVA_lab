@@ -33,6 +33,7 @@ if (s1.compareTo(s2) > 0) // s1 > s2, namely comes lexicographically after s2
 
 **Statements**
 
-**语句**
-`public static final type Variable = number;` <br>
-e.g. `public static final int MAX_ENTRIES = 100;` 
+**一些语句**
+1. `public static final type Variable = number;` <br>
+e.g. `public static final int MAX_ENTRIES = 100;`
+2. `public static void main(String[] args) {}`
