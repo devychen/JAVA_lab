@@ -1,6 +1,6 @@
-**Name Convention**
+**Name Convention**   
 `Class` begin upperc <br>
-`primitive` begin lowerc <>
+`primitive` begin lowerc <br>
 `variableOfBothTypes` begin lowercase, puntuated by upperc <br>
 
 **Primitive Data Compatibility**: byte -> short -> int -> long -> float -> double
