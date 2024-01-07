@@ -47,5 +47,5 @@ keyboard.close();
 **一些语句**
 1. **Declare constants**: <br>
 `public static final type CONSTANTSNAME = value;` <br>
-e.g. `public static final int MAX_ENTRIES = 100;` or `String MOTTO = "Science matters.";
+e.g. `public static final int MAX_ENTRIES = 100;` or `String MOTTO = "Science matters.";`
 2. `public static void main(String[] args) {}`
