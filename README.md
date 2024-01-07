@@ -32,18 +32,21 @@ Declaring constants: `public static final Type Name = Value` <br>
 **Operators 运算符**: expression 表达式 <br>
 1. Arithmetic expressions (+, -, !, ++, --; *, /, % mod), operands - 操作符 <br>
 `amount = amount + 5;` equals `amount += 5;`, also have `-+`, `*=` <br>
-Increment operator `++`, decrement `--`: prior before var <br>
+Division operator `/` result is truncated, not rounded. <br>
+Mod operator `%` to obtain remainder. <br>
+Predence rules: unary `+` `-` `++` `--` `!` > binary `*` `/` `%`> binary `+` `-`
+3. Increment operator `++`, decrement `--`: prior before var <br>
 `int m =4;`, `int result = 3 * (++m);`, m = 5, result = 15. If `(m++)`, m = 5, result = 2; <br>
-2. Boolean expressions
-3. Comparison Operators: `==`, `!=` ≠, `>`, `>=`, `<`, `<=`. <br>
+4. Boolean expressions
+5. Comparison Operators: `==`, `!=` ≠, `>`, `>=`, `<`, `<=`. <br>
 Don't use `==` for floating `double` or boolean or object (for string it compares location not content, use `equals` instead), only `int` and `char`. <br>
-4. Logical Operators: `&&` and, `||` or, `!` not.
-5. Compound Boolean Expression: combine B_E using logical operators. <br>
+6. Logical Operators: `&&` and, `||` or, `!` not.
+7. Compound Boolean Expression: combine B_E using logical operators. <br>
 `if ((score > 0) && (score <= 100))` NOT `if (0 < score <= 100)` Parentheses for better readability <br>
 `if ((quantity > 5) || (cost < 10))` <br> inclusive 'or', namely allows either or both true <br>
-6. Negating B_E. Avoid Negation operator.
+8. Negating B_E. Avoid Negation operator.
 `(a || b) && !(a && b)` exclusive or, namely true only if one if true <br>
-7. Conditional operator `?` `:`
+9. Conditional operator `?` `:`
 ```
 if (n1 > n2)
   max = n1;
